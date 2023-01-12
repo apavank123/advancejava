@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.xwork.springbeanwired.bean")
+@ComponentScan("com.xwork.springbeanautowired.bean")
 public class SpringConfiguration {
 	@Bean
 	public String roleName() {
@@ -18,8 +18,8 @@ public class SpringConfiguration {
 	@Bean
 	public int years() {
 		System.out.println("registering years..");
-		int ref = 10;
-		return ref;
+
+		return 10;
 	}
 
 	@Bean
@@ -38,7 +38,7 @@ public class SpringConfiguration {
 	@Bean
 	public String nameOfPresident() {
 		System.out.println("registering president name..");
-		return "NarendrModi";
+		return "JP Nadda";
 
 	}
 
@@ -83,13 +83,13 @@ public class SpringConfiguration {
 	@Bean
 	public String owner() {
 		System.out.println("registering owner name..");
-		return "Sneha";
+		return "PavanK";
 	}
 
 	@Bean
 	public String addresss() {
 		System.out.println("registering address...");
-		return "Rajajinagar";
+		return "Mudhol";
 	}
 
 	///////////////////////////////////////////////////////////////
@@ -103,13 +103,13 @@ public class SpringConfiguration {
 	@Bean
 	public String developerName() {
 		System.out.println("registering developer name...");
-		return "Omkar";
+		return "Dev";
 	}
 
 	@Bean
 	public LocalDate datee() {
 		System.out.println("registering date..");
-		return LocalDate.of(2010, 10, 31);
+		return LocalDate.of(2014, 10, 31);
 	}
 
 	@Bean
@@ -123,7 +123,7 @@ public class SpringConfiguration {
 	@Bean
 	public String nameOfPencil() {
 		System.out.println("registering name..");
-		return "Nataraj";
+		return "Apsara";
 	}
 
 	@Bean
@@ -139,19 +139,19 @@ public class SpringConfiguration {
 	}
 
 	@Bean
-	public String colorr() {
+	public String color() {
 		System.out.println("registering color..");
 		return "Red";
 	}
 
 	@Bean
-	public boolean sharpp() {
+	public boolean sharp() {
 		System.out.println("registering sharp..");
 		return true;
 	}
 
 	@Bean
-	public boolean stolenn() {
+	public boolean stolen() {
 		System.out.println("registering stolen..");
 		return false;
 	}
@@ -203,13 +203,13 @@ public class SpringConfiguration {
 	@Bean
 	public String nameOfEngg() {
 		System.out.println("registering name..");
-		return "Swapna";
+		return "Pavanak";
 	}
 
 	@Bean
 	public String company() {
 		System.out.println("registering company..");
-		return "AxisBank";
+		return "TechMahindra";
 	}
 
 	@Bean
@@ -221,7 +221,7 @@ public class SpringConfiguration {
 	@Bean
 	public double salaryOfEngineer() {
 		System.out.println("registering salary..");
-		return 40000.00;
+		return 35000.00;
 	}
 
 	/* ========================================================== */
@@ -238,28 +238,28 @@ public class SpringConfiguration {
 	}
 
 	@Bean
-	public String PatientName() {
+	public String patientName() {
 		System.out.println("registering Patient Name..");
 		return "Vivek";
 	}
 
 	@Bean
-	public String PatientBloodGroup() {
+	public String patientBloodGroup() {
 		System.out.println("registering Patient BloodGroup..");
 		return "B+";
 	}
 
 	@Bean
-	public long PatientMobileNo() {
+	public long patientMobileNo() {
 		System.out.println("registering Patient MobileNo..");
 		return 9036137153L;
 	}
 
 	@Bean
-	public String PatientAddess() {
+	public String patientAddess() {
 		System.out.println("registering pacentAddess..");
 		return "Teachers Colony Mudhol";
-	
+
 	}
 
 	@Bean

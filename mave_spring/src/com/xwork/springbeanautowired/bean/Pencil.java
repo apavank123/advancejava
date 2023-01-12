@@ -17,13 +17,13 @@ public class Pencil {
 	@Qualifier("priceOfPencil")
 	private double price;
 	@Autowired
-	@Qualifier("colorr")
+	@Qualifier("color")
 	private String color;
 	@Autowired
-	@Qualifier("sharpp")
+	@Qualifier("sharp")
 	private boolean sharp;
 	@Autowired
-	@Qualifier("stolenn")
+	@Qualifier("stolen")
 	private boolean stolen;
 
 	public Pencil() {

@@ -8,13 +8,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Software {
-	
+
 	@Autowired
 	@Qualifier("nameOfSoftware")
 	private String name;
-	/*@Autowired
-	@Qualifier("versionOfSoftware")
-	private int version;*/
 	@Autowired
 	@Qualifier("developerName")
 	private String developer;
@@ -23,16 +20,14 @@ public class Software {
 	@Autowired
 	@Qualifier("freeSoftware")
 	private boolean free;
-	
-    public Software() {
+
+	public Software() {
 		System.out.println("Created Software by spring...");
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Software [name=" + name + ",  developer=" + developer + ", date=" + date
-				+ ", free=" + free + "]";
+		return "Software [name=" + name + ",  developer=" + developer + ", date=" + date + ", free=" + free + "]";
 	}
-	
 
 }

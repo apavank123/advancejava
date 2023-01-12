@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import com.xwork.springbeanautowired.bean.FirstTime;
 import com.xwork.springbeanautowired.bean.Government;
 import com.xwork.springbeanautowired.bean.Hardware;
-import com.xwork.springbeanautowired.bean.Pencil;
 import com.xwork.springbeanautowired.bean.Patient;
+import com.xwork.springbeanautowired.bean.Pencil;
 import com.xwork.springbeanautowired.bean.Rubber;
 import com.xwork.springbeanautowired.bean.Software;
 import com.xwork.springbeanautowired.bean.SoftwareEngineer;
@@ -27,26 +27,27 @@ public class Tester {
 		FirstTime ref1 = spring.getBean(FirstTime.class);
 		System.out.println(ref1);
 
-		Government ref2 = spring.getBean(Government.class);
-		System.out.println(ref2);
+		Government govt = spring.getBean(Government.class);
+		System.out.println(govt);
 
-		Hardware ref3 = spring.getBean(Hardware.class);
-		System.out.println(ref3);
+		Hardware hardware = spring.getBean(Hardware.class);
+		System.out.println(hardware);
 
-		Software ref4 = spring.getBean(Software.class);
-		System.out.println(ref4);
+		Software software = spring.getBean(Software.class);
+		System.out.println(software);
 
-		Pencil ref5 = spring.getBean(Pencil.class);
-		System.out.println(ref5);
+		Pencil pencil = spring.getBean(Pencil.class);
+		System.out.println(pencil);
 
-		Rubber ref6 = spring.getBean(Rubber.class);
-		System.out.println(ref6);
+		Rubber rubber = spring.getBean(Rubber.class);
+		System.out.println(rubber);
 
-		SoftwareEngineer ref7 = spring.getBean(SoftwareEngineer.class);
-		System.out.println(ref7);
+		SoftwareEngineer softengg = spring.getBean(SoftwareEngineer.class);
+		System.out.println(softengg);
+		
+//		Patient ptnt = spring.getBean(Patient.class);
+//		System.out.println(ptnt);
 
-		Patient ref8 = sprnig.getBean(Patient.class)
-		System.out.println(ref8);
 	}
 
 }

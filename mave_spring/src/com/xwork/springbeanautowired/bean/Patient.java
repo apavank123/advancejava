@@ -11,82 +11,38 @@ public class Patient {
 	private byte id;
 	@Autowired
 	@Qualifier("ageOfPatient")
-	private short age ;
+	private short age;
 	@Autowired
-	@Qualifier("PatientName")
+	@Qualifier("patientName")
 	private String name;
 	@Autowired
-	@Qualifier("PatientBloodGroup")
-	private String experience;
+	@Qualifier("patientBloodGroup")
+	private String bloodgroup;
 	@Autowired
-	@Qualifier("PatientMobileNo")
+	@Qualifier("patientMobileNo")
 	private long mobileNo;
 	@Autowired
-	@Qualifier("PatientAddess")
-	private String salary;
+	@Qualifier("patientAddess")
+	private String address;
 	@Autowired
-	@Qualifier("Deepak")
-	private float patientRelativeName ;
+	@Qualifier("patientRelativeName")
+	private float patientRelativeNames;
 	@Autowired
-	@Qualifier("true")
-	private boolean isAliveOrNot;
+	@Qualifier("isAliveOrNot")
+	private boolean isAlive;
 	@Autowired
-	@Qualifier("chhh")
-	private String patientHealthIssue;
-	
+	@Qualifier("patientHealthIssue")
+	private String health;
 
-	@Bean
-	public short ageOfPatient() {
-		System.out.println("registering ageOf Patient..");
-		return 23;
-	}
-
-	@Bean
-	public String PatientName() {
-		System.out.println("registering Patient Name..");
-		return "Vivek";
-	}
-
-	@Bean
-	public String PatientBloodGroup() {
-		System.out.println("registering Patient BloodGroup..");
-		return "B+";
-	}
-
-	@Bean
-	public long PatientMobileNo() {
-		System.out.println("registering Patient MobileNo..");
-		return 9036137153L;
-	}
-
-	@Bean
-	public String PatientAddess() {
-		System.out.println("registering pacentAddess..");
-		return "Teachers Colony Mudhol";
-	
-	}
-
-	@Bean
-	public String patientRelativeName() {
-		System.out.println("registering patientRelativeName..");
-		return "Deepak";
-	}
-
-	@Bean
-	public boolean isAliveOrNot() {
-		System.out.println("registering alive..");
-		return true;
-	}
-
-	@Bean
-	public String patientHealthIssue() {
-		System.out.println("registering patientHealthIssue..");
-		return "Cancer";
-	}
-
-	
-	
 	public Patient() {
-		System.out.println("Created Patient by spring...");
+		System.out.println("Created Firsttime by Patient..");
 	}
+
+	@Override
+	public String toString() {
+		return "Patient [id=" + id + ", age=" + age + ", name=" + name + ", bloodgroup=" + bloodgroup + ", mobileNo="
+				+ mobileNo + ", address=" + address + ", patientRelativeNames=" + patientRelativeNames
+				+ ", isAliveOrNot=" + isAlive + ", health=" + health + "]";
+	}
+
 }

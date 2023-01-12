@@ -11,6 +11,7 @@ public class FirstTime {
 	@Qualifier("roleName")
 	private String role;
 	@Autowired
+	@Qualifier("years")
 	private int noOfYears;
 	@Autowired
 	@Qualifier("companyName")
