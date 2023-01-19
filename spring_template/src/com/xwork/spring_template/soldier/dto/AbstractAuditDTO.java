@@ -21,4 +21,4 @@ public abstract class AbstractAuditDTO implements Serializable {
 	private String updatedBy;
 	private LocalDate updatedDate;
 
-}
+} 

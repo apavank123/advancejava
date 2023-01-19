@@ -13,7 +13,7 @@ import com.xwork.spring_template.soldier.repo.SoldierRepo;
 public class SoldierServiceImpl implements SoldierService {
 
 	private SoldierRepo soldierRepo;
-
+ 
 	public SoldierServiceImpl() {
 		System.out.println("Created SoldierServiceImpl using no-arg Const.......");
 	}
@@ -34,11 +34,11 @@ public class SoldierServiceImpl implements SoldierService {
 
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();
-		Set<ConstraintViolation<SoldierDTO>> voilations = validator.validate(dto);
+		Set<ConstraintViolation<SoldierDTO>> violations = validator.validate(dto);
 
-		if (!voilations.isEmpty()) {
+		if (!violations.isEmpty()) {
 			System.err.println("There is validation errors");
-			voilations.forEach(v -> {
+			violations.forEach(v -> {
 				System.err.println("Voilating message " + v.getMessage());
 			});
 			return false;

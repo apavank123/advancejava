@@ -9,7 +9,7 @@ public class SoldierTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		SoldierDTO dto = new SoldierDTO("Rasdfghj", 2, "Topper", "Xwork", "BAGALKOTE");
+		SoldierDTO dto = new SoldierDTO("Rajuuu", 2, "Topper", "Xwork", "BAGALKOTE");
 
 		SoldierService service = new SoldierServiceImpl();
 		service.validateAndSave(dto);
