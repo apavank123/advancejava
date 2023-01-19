@@ -15,7 +15,7 @@ import com.xwork.spring_template.soldier.repo.ResortRepo;
 
 @Component
 public class ResortServiceImpl implements ResortService {
-	
+
 	@Autowired
 	private Validator validator;
 	private ResortRepo resortRepo;
@@ -33,7 +33,8 @@ public class ResortServiceImpl implements ResortService {
 
 	@Override
 	public boolean validateAndSave(ResortDTO rstdto) {
-		// TODO Auto-generated method stub
+		System.out.println("running validate And Save");
+		System.out.println("rstDTO : " + rstdto);
 
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();

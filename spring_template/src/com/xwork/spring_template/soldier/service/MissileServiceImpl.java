@@ -35,8 +35,9 @@ public class MissileServiceImpl implements MissileService {
 
 	@Override
 	public boolean validateAndSave(MissileDTO msldto) {
-		// TODO Auto-generated method stub
-
+		System.out.println("running validate And Save");
+		System.out.println("mslDTO : " + msldto);
+		
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();
 		Set<ConstraintViolation<MissileDTO>> violations = validator.validate(msldto);
