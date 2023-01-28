@@ -45,8 +45,10 @@ public class LocationServlet extends HttpServlet {
 		if (name1.length() > 3) {
 			writer.print("<span style='colour:green;'>");
 			writer.print("Login Sucessfully " + name1);
+			writer.print("\n" + "\n");
+			writer.print("<a href=index.html>Home</a>");
 		} else {
-			writer.print("<span style='colour:red;'>");
+			writer.print("<span style='colour:red';>");
 			writer.print("name should be greateer than 3 charaters");
 		}
 		writer.print("</h1>");

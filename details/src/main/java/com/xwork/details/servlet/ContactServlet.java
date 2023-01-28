@@ -43,6 +43,8 @@ public class ContactServlet extends HttpServlet {
 		if (name.length() > 3) {
 			writer.print("<span style='colour:green;'>");
 			writer.print("Login Sucessfully " + name);
+			writer.print("\n" + "\n");
+			writer.print("<a href=index.html>Home</a>");
 		} else {
 			writer.print("<span style='colour:red;'>");
 			writer.print("name should be greather than 3 charaters");
