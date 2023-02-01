@@ -26,7 +26,7 @@
 		</div>
 	</nav>
 	<h2>This is food item page</h2>
-	<form action="tinnu" method="post">
+	<form action="food" method="post">
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Food name</label> <input
 				type="text" class="form-control" name="foodname" id="formFile"

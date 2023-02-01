@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Component
-@RequestMapping("/tinnu")
+@RequestMapping("/food")
 public class FoodItemComponent {
 
 	public FoodItemComponent() {
