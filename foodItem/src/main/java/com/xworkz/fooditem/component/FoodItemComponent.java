@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class FoodItemComponent {
 
 	public FoodItemComponent() {
-
 		System.out.println("Created...... " + this.getClass().getSimpleName());
 	}
 

@@ -22,12 +22,25 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img
+			<a class="navbar-brand" href="#"> <img
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
-				alt="" height="48" width="80"> </a> <a href="fooditem.jsp">Food
-				Item</a>
+				alt="" height="48" width="80">
+			</a>
 		</div>
+		<div class="col-1">
+			<a href="fooditem.jsp">Food_Item</a>
+
+		</div>
+
+		<div class="col-1">
+			<a href="interview.jsp">Interview</a>
+		</div>
+
+
 	</nav>
+	<br>
+	<div class="col"><h1>This is web application run using bootstrap</h1></div>
+	
 
 
 

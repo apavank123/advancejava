@@ -11,9 +11,8 @@
 		<spring.lib.version>5.3.24</spring.lib.version>
 		<lombok.lib.version>1.18.24</lombok.lib.version>
 		<quarkus.lib.version>1.13.7</quarkus.lib.version>
-		
-	</properties>
 
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		<dependency>
@@ -21,8 +20,6 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.lib.version}</version>
 		</dependency>
-
-
 
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>

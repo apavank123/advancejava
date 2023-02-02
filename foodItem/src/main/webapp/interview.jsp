@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-
 <title>X-workz</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,42 +15,44 @@
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
 
+
 </head>
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
-				alt="" height="48" width="80"> </a> <a href="index.jsp">Home
-				Page</a>
+				alt="" height="48" width="80"> </a> <a href="index.jsp">Home_Page</a>
 		</div>
 	</nav>
-	<h2>This is food item page</h2>
-	<form action="food" method="post">
+
+	<h2>This is Interiew Details page</h2>
+	<form action="attend" method="post">
 		<div class="mb-3">
-			<label for="formFile" class="form-label">Food name</label> <input
-				type="text" class="form-control" name="foodname" id="formFile"
-				placeholder="Enter your food name" />
+			<label for="formFile" class="form-label">Your_name</label> <input
+				type="text" class="form-control" name="Your_name" id="formFile"
+				placeholder="Enter Your_name " />
 		</div>
-		Select your food type <select class="form-select"
-			aria-label="Default select example" name="type">
-			<option selected>Select your type of food</option>
-			<option value="1">Veg</option>
-			<option value="2">Non_Veg</option>
-			<option value="3">Both</option>
+		Select your Company Name <select class="form-select"
+			aria-label="Default select example" name="company_Name">
+			<option selected>Select Company</option>
+			<option value="X-workz_BTM">X-workz_BTM</option>
+			<option value="X-workz_Raj">X-workz_Raj</option>
+			<option value="Both">Both</option>
 		</select>
-		<div>
-			<label for="customRange2" class="form-label">Quantity</label> <input
-				type="range" class="form-range" min="0" max="10" name="quantity"
-				id="customRange2">
-		</div>
 		<div class="mb-3">
-			<label for="formFile" class="food">Price</label> <input
-				class="form-control" name="price" type="text" id="foodname"
-				placeholder="Enter your food Price" name="price">
+			<label for="formFile" class="form-label">Your_Role</label> <input
+				type="text" class="form-control" name="role" id="formFile"
+				placeholder="Enter your Desired role" />
 		</div>
+
+
 		<input type="submit" value="send" class="btn btn-dark">
 	</form>
+
+
+
 
 </body>
 </html>
