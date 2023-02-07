@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.xworkz.pk.dto.BevergeDTO;
+import com.xworkz.pk.dto.ChatDTO;
 import com.xworkz.pk.dto.EducationDTO;
 import com.xworkz.pk.dto.FamilyDTO;
 import com.xworkz.pk.dto.MobileDTO;
@@ -172,6 +173,24 @@ public class PkController {
 		chill.setTaluk("Bangalore");
 		chill.setPlace("Rajajinagar");
 		model.addAttribute("drink", chill);
+		return "index.jsp";
+	}
+	@GetMapping("/chat")
+	public String chatDetails(Model model) {
+		System.out.println("running chatDetails");
+		ChatDTO dto = new ChatDTO();
+		dto.setId(1);
+		dto.setName("Dahi Puri");
+		dto.setPrice(80.00);
+		dto.setMadeBy("Vivek");
+		dto.setLocation("Rajajinagar");
+		dto.setQuantity("2 plate");
+		dto.setCoolDrinkName("Oreo MilkShake");
+		dto.setBuyerName("Raju");
+		dto.setTaste(false);
+		dto.setCenterName("Vivekanand Chat center");
+		dto.setType("Spicy");
+		model.addAttribute("chat", dto);
 		return "index.jsp";
 	}
 

@@ -126,12 +126,13 @@
 				: ${educationdto.engineeringBranch}</label><br> <label>engineeringClgLocation
 				: ${educationdto.engineeringClgLocation}</label><br> <label>engineeringTaluk
 				: ${educationdto.engineeringTaluk}</label><br>
-		</form> <br>
+		</form>
+		<br>
 
 		<form action="family">
 			<h6>Display the FamilyDTO :</h6>
-			<input type="submit" value="click for FamilyDTO" /> <br> 
-			<label>FatherName :${family.fatherName}</label> <br> <label>MotherName
+			<input type="submit" value="click for FamilyDTO" /> <br> <label>FatherName
+				:${family.fatherName}</label> <br> <label>MotherName
 				:${family.motherName}</label> <br> <label>BrotherName
 				:${family.brotherName}</label> <br> <label>DistName
 				:${family.distName}</label> <br> <label>TalukName
@@ -140,34 +141,51 @@
 			<br> <label>Reigion :${family.religion}</label> <br> <label>YearlyIncome
 				:${family.yearlyIncome}</label> <br> <label>FatherOccupation
 				:${family.fatherOccupation}</label> <br>
-		</form> <br>
-		
-		<form action="mobile">
-		<h6>Display the Mobile :</h6>
-		<input type="submit" value="click for Mobile" /> <br>
-		<label>Mobile Model : ${mobile.model}</label>
-		<br><label>Mobile CompanyName : ${mobile.companyName}</label>
-		<br><label>Mobile RAM : ${mobile.ram}</label>
-		<br><label>Mobile ROM : ${mobile.rom}</label>
-		<br><label>Mobile Cost : ${mobile.cost}</label>
-		
-		</form> <br>
-		
-		<form action="drink">
-		<h6>Display the Beverge :</h6>
-		<input type="submit" value="click for Beverge" /> <br>
-		<label>Beverage Name :${drink.name}</label>
-		<br><label>Beverage cold :${drink.cold}</label>
-		<br><label>Beverage hot :${drink.hot}</label>
-		<br><label>Beverage price : ${drink.price}</label>
-		<br><label>Beverage location : ${drink.location}</label>
-		<br><label>Beverage dist : ${drink.dist}</label>
-		<br><label>Beverage taluk : ${drink.taluk}</label>
-		<br><label>Beverage place : ${drink.place}</label>
-		
 		</form>
-		
-		
+		<br>
+
+		<form action="mobile">
+			<h6>Display the Mobile :</h6>
+			<input type="submit" value="click for Mobile" /> <br> <label>Mobile
+				Model : ${mobile.model}</label> <br>
+			<label>Mobile CompanyName : ${mobile.companyName}</label> <br>
+			<label>Mobile RAM : ${mobile.ram}</label> <br>
+			<label>Mobile ROM : ${mobile.rom}</label> <br>
+			<label>Mobile Cost : ${mobile.cost}</label>
+
+		</form>
+		<br>
+
+		<form action="drink">
+			<h6>Display the Beverge :</h6>
+			<input type="submit" value="click for Beverge" /> <br> <label>Beverage
+				Name :${drink.name}</label> <br>
+			<label>Beverage cold :${drink.cold}</label> <br>
+			<label>Beverage hot :${drink.hot}</label> <br>
+			<label>Beverage price : ${drink.price}</label> <br>
+			<label>Beverage location : ${drink.location}</label> <br>
+			<label>Beverage dist : ${drink.dist}</label> <br>
+			<label>Beverage taluk : ${drink.taluk}</label> <br>
+			<label>Beverage place : ${drink.place}</label>
+
+		</form>
+		<br>
+
+		<form action="chat">
+			<h6>Display the Chat :</h6>
+			<input type="submit" value="click for Chat" /> <br> <label>
+				ChatId : ${chat.id} </label> <br> <label> ChatName :
+				${chat.name} </label> <br> <label> ChatPrice : ${chat.price} </label> <br>
+			<label> ShopName : ${chat.centerName} </label> <br> <label>
+				MadeBy : ${chat.madeBy} </label> <br> <label> Location :
+				${chat.location} </label> <br> <label> CoolDrink :
+				${chat.coolDrinkName} </label> <br> <label> Location :
+				${chat.location} </label> <br> <label> Quantity :
+				${chat.quantity} </label> <br> <label> TasteOrNot :
+				${chat.taste} </label> <br> <label> Type : ${chat.type} </label>
+		</form>
+
+
 	</div>
 
 
