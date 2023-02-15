@@ -69,9 +69,14 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<version>${mysql.lib.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-		
 
+		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${sevlet.lib.version}</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 

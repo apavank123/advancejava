@@ -9,28 +9,28 @@ public class ValentineMVCInt extends AbstractAnnotationConfigDispatcherServletIn
 	public ValentineMVCInt() {
 		System.out.println("Created...... " + this.getClass().getSimpleName());
 	}
-
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		System.out.println("Created getRootConfigClasses.....");
+		System.out.println("1) Invoked getRootConfigClasses() ");
 		return null;
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		System.out.println("Created getServletConfigClasses.....");
-		return new Class[] { ValentineApplicationConfiguration.class };
+		System.out.println("2) Invoked getRootConfigClasses() ");
+		return new Class[] {ValentineApplicationConfiguration.class};
 	}
 
 	@Override
 	protected String[] getServletMappings() {
-		System.out.println("getServletMappings");
-		return new String[] {"/"};
+		System.out.println("3) Invoked getServletMappings()");
+		return new String[]{"/"};
 	}
-
+	
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		System.out.println("4) Invoking configureDefaultServletHandling ");
+		WebMvcConfigurer.super.configureDefaultServletHandling(configurer);
 		configurer.enable();
 	}
-
 }

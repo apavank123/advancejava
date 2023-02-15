@@ -37,6 +37,8 @@
 	<c:forEach items="${errors}" var="e">
 	<span style="color: red;"> ${e.message} </span>
 	</c:forEach>
+	
+	
 
 	<form action="valentine" method="post">
 	<pre>

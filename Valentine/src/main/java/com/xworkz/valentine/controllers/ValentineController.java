@@ -20,18 +20,17 @@ import com.xworkz.valentine.service.ValentineService;
 @RequestMapping("/valentine")
 public class ValentineController {
 
-	
-
 	@Autowired
 	private ValentineService valentineService;
-	
+
 	List<String> places = Arrays.asList("Cubbon Park", "Nandi Hills", "Mandagiri Hills", "Lalbagh");
 
 	List<String> gifts = Arrays.asList("Teddy", "Chocolate", "Flower", "Gadgets");
-	
+
 	public ValentineController() {
 		System.out.println("Created " + this.getClass().getSimpleName());
 	}
+	
 
 	@GetMapping
 	public String onValentine(Model model) {
@@ -42,23 +41,24 @@ public class ValentineController {
 
 		return "Valentine";
 	}
-	
+
 	@PostMapping
 	public String onValentine(Model model, ValentineDTO dto) {
-		System.out.println("Running onValentine post method"+dto);
-		
+		System.out.println("Running onValentine post method" + dto);
+
 		Set<ConstraintViolation<ValentineDTO>> constraintViolations = this.valentineService.validateAndSave(dto);
 		if (constraintViolations.isEmpty()) {
 			System.out.println("no violations, going save the details");
 			return "Valentinesuccess";
 		}
-		
+
 		model.addAttribute("places", places);
 		model.addAttribute("gifts", gifts);
 		model.addAttribute("errors", constraintViolations);
-		System.err.println("Violations in dto : "+dto);
-		
+		System.err.println("Violations in dto : " + dto);
+
 		return "Valentine";
+
 	}
 
 }
